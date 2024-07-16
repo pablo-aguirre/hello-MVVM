@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private var counterVM = CounterViewModel()
+    private var counterVM = CounterViewModel()
     
     var body: some View {
         VStack {

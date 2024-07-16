@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-class CounterViewModel: ObservableObject {
+@Observable
+class CounterViewModel {
     
     // never expose the Model which contain business logic!
-    @Published private var counter = Counter()
+    private var counter = Counter()
     
     var value: Int {
         counter.value
